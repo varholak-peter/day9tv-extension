@@ -1,5 +1,6 @@
 export const initialState: Reducer.State = {
-  contrast: false,
+  font_contrast: false,
+  font_improvements: false,
   form_scaling: false,
 };
 

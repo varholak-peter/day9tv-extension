@@ -1,0 +1,37 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body a:focus,
+body .btn:focus {
+  outline: 5px auto #ffa71a !important;
+}
+
+#masthead a.logo:focus,
+#view-project .post .project-actions a:focus {
+  outline-color: white !important;
+  outline-offset: 2px;
+}
+
+#header,
+#masthead,
+#footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.03rem;
+}
+
+/* Show pointer on labeled checkboxes */
+#view-project .post .update-form label.meta,
+#view-recovery .post .card label:last-child {
+  cursor: pointer;
+}
+
+/* Make pagination buttons bigger */
+#view-project .post .project-listing .pagination > .btn {
+  min-width: 100px;
+}

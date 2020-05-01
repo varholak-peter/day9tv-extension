@@ -1,13 +1,15 @@
 import { getObjDifference } from "./util";
 
-const styleSheetMap = {
-  contrast: "styles/contrast.css",
+const styleSheetMap: { [key in keyof Reducer.State]: string } = {
+  font_contrast: "styles/font_contrast.css",
+  font_improvements: "styles/font_improvements.css",
   form_scaling: "styles/form_scaling.css",
 } as const;
 
 const _loadCss = (tabId: number) => (styleSheet: string) => {
   chrome.tabs.insertCSS(tabId, {
     file: styleSheet,
+    runAt: "document_start",
   });
 };
 

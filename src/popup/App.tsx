@@ -34,11 +34,18 @@ export const App = () => {
       <fieldset>
         <legend>Accessibility</legend>
         <Checkbox
-          checked={state.contrast}
+          checked={state.font_contrast}
           detail="Increase font contrast"
-          label="Contrast"
-          name="contrast"
-          onInput={onInput("contrast")}
+          label="Font Contrast"
+          name="font_contrast"
+          onInput={onInput("font_contrast")}
+        />
+        <Checkbox
+          checked={state.font_improvements}
+          detail="Miscellaneous improvements to font"
+          label="Font Improvements"
+          name="font_improvements"
+          onInput={onInput("font_improvements")}
         />
       </fieldset>
       <fieldset>
@@ -53,7 +60,7 @@ export const App = () => {
       </fieldset>
       {hasUnchecked ? <strong>Reload the page to apply changes.</strong> : null}
       <hr />
-      <em>This extension is in no way related to Day9.tv dev team.</em>
+      <em>This extension is not related to Day9.tv dev team.</em>
     </div>
   );
 };

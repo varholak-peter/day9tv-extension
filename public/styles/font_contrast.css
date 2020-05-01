@@ -1,0 +1,210 @@
+/* Sets contrasting colors according to WCAG AAA standard. (https://webaim.org/resources/contrastchecker/) */
+/* Minimum contrast for #0D0B0D background: #9c9c96. */
+/* Minimum contrast for #444443 background: #dbdbd6. */
+
+body a:hover,
+body a:focus {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Navigation buttons */
+#header .btn-group .btn {
+  color: #9c9c96;
+}
+
+#header .btn-group-secondary .btn {
+  color: #dbdbd6;
+}
+
+/* Next broadcast timer */
+#masthead .countdown .countdown-inner .timezone-display > * {
+  color: #9c9c96;
+}
+
+/* Social Icons */
+#footer > .social-links a {
+  position: relative;
+}
+
+#footer > .social-links a > img {
+  visibility: hidden;
+}
+
+#footer > .social-links a::before {
+  background: #9c9c96;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: transform 0.25s;
+  width: 100%;
+  -webkit-mask-size: contain;
+}
+
+#footer > .social-links a:hover::before,
+#footer > .social-links a:focus::before {
+  background: white;
+  transform: scale(1.2);
+}
+
+#footer > .social-links [href*="facebook"]::before {
+  -webkit-mask-image: url(/images/social/iconmonstr-facebook-5.png);
+}
+
+#footer > .social-links [href*="twitch"]::before {
+  -webkit-mask-image: url(/images/social/iconmonstr-twitch-5.png);
+}
+
+#footer > .social-links [href*="twitter"]::before {
+  -webkit-mask-image: url(/images/social/iconmonstr-twitter-5.png);
+}
+
+#footer > .social-links [href*="discord"]::before {
+  -webkit-mask-image: url(/images/social/iconmonstr-discord-5.png);
+}
+
+#footer > .social-links [href*="youtube"]::before {
+  -webkit-mask-image: url(/images/social/iconmonstr-youtube-5.png);
+}
+
+#footer > .social-links [href*="reddit"]::before {
+  -webkit-mask-image: url(/images/social/iconmonstr-reddit-5.png);
+}
+
+/* Footer links */
+#footer > .legal {
+  color: #9c9c96;
+}
+
+#footer > .legal > .btn-group > a {
+  color: #9c9c96;
+  text-decoration: underline;
+}
+
+#footer > .legal > .btn-group > a:hover {
+  color: white;
+}
+
+/* Schedule */
+#upcoming-shows > ul > li > a[data-target],
+#upcoming-events > ul > li > a[data-target],
+#recent-shows > ul > li > a[data-target] {
+  color: #9c9c96;
+}
+
+/* Playlist cards */
+.youtube-playlists .carousel-item .card > .card-footer {
+  color: #dbdbd6;
+}
+
+/* Search form */
+#view-projects .post form.search .select > .input {
+  color: #444243;
+}
+
+#view-projects .post form.search .select > ul li {
+  color: #444243;
+}
+
+#view-projects .post form.search .select > ul li:hover {
+  background: #d9d9d9;
+  color: #0d0b0d;
+}
+
+/* Project card */
+#view-projects .post .project-listing .card.project-card .meta,
+#view-projects .post .project-listing .card.project-card .meta > a {
+  color: #dbdbd6;
+}
+
+#view-projects .post .project-listing .card.project-card > a:hover,
+#view-projects .post .project-listing .card.project-card .meta > a:hover {
+  text-decoration: underline;
+}
+
+/* Pagination - result count */
+#view-projects .post .project-listing .pagination > .total {
+  color: #9c9c96;
+}
+
+/* How it works section */
+#view-projects .post h4 ~ ol li {
+  color: #9c9c96;
+}
+
+/* Project stats */
+#view-projects .post h4 ~ ul.project-stats li {
+  color: #c4c4ba;
+}
+
+/* About section */
+#body .container article .page > p,
+#body .container article .page > strong,
+#body .container article .page > s,
+#body .container article .page > em,
+#body .container article .page > ul li,
+#body .container article .page > ol li {
+  color: #9c9c96;
+}
+
+#body .container article .page > h2 {
+  color: #dbdbd6;
+}
+
+/* Projects feed */
+#view-projectsfeed .post .card > .meta > .title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#view-projectsfeed .post .card > .meta > .title:hover {
+  text-decoration: underline;
+}
+
+#view-projectsfeed .post .card > .meta > span.float-right {
+  color: #dbdbd6;
+}
+
+/* My projects */
+#view-user .card.project-card .meta,
+#view-user .card.project-card .meta > a {
+  color: #dbdbd6;
+}
+
+#view-user .card.project-card > a:hover,
+#view-user .card.project-card .meta > a:hover {
+  text-decoration: underline;
+}
+
+/* Update card meta (date) */
+#view-project .post .card.update-card .meta > span.float-right {
+  color: #dbdbd6;
+}
+
+/* Timeframe section */
+#view-project .post h4 ~ p,
+#view-project .post h4 ~ strong,
+#view-project .post h4 ~ s,
+#view-project .post h4 ~ em,
+#view-project .post h4 ~ ul li {
+  color: #9c9c96;
+}
+
+/* Section titles for semantic contrast */
+#view-project .post h4 {
+  color: #dbdbd6;
+}
+
+/* Tags */
+#view-project .post ul.tags > li {
+  color: #dbdbd6;
+}
+
+/* Modal */
+form.modal-dialog > .modal-content,
+form.modal-dialog > .modal-content .modalaction label,
+form.modal-dialog > .modal-content .modalaction p.disclaimer {
+  color: #dbdbd6;
+}
