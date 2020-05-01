@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Day9.tv Optimizer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Just a simple accessibility optimizer & stuff",
 
   "background": {
@@ -22,7 +22,7 @@
   },
   "page_action": {
     "default_popup": "popup.html",
-    "default_title": "Configure Day9.tv"
+    "default_title": "Day9.tv Optimizer"
   },
   "permissions": ["storage", "tabs", "https://*.day9.tv/*"]
 }
