@@ -4,6 +4,7 @@ node_modules
 # Build directory
 build/
 dist/
+day9tv-optimizer.zip
 
 # Misc
 .DS_Store
