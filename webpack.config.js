@@ -4,6 +4,7 @@ module.exports = {
   mode: process.env.NODE_ENV || "development",
   entry: {
     background: "./src/background.ts",
+    day9tv: "./src/day9tv/index.ts",
     popup: "./src/popup/index.tsx",
   },
   module: {
@@ -20,6 +21,6 @@ module.exports = {
   },
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, process.env.NODE_ENV === "production" ? "dist" : "build"),
   },
 };

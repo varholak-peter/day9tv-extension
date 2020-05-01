@@ -1,0 +1,97 @@
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  min-width: 20em;
+  padding: 0.25em 0.5em 0.5em;
+}
+
+.app > h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.app > fieldset {
+  border: none;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.app > fieldset > legend {
+  font-weight: bold;
+}
+
+.app > hr {
+  margin: 0.5em 0;
+}
+
+.app > strong {
+  color: #d40000;
+}
+
+.app label + em {
+  color: gray;
+  display: block;
+  font-size: 0.8em;
+  margin-top: 0.25em;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+input[type="checkbox"] + label:before {
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  content: "";
+  display: inline-block;
+  height: 1.2em;
+  margin-right: 10px;
+  vertical-align: text-top;
+  width: 1.2em;
+}
+
+input[type="checkbox"]:focus + label:before {
+  outline: 2px solid #ffa71a;
+  outline-offset: 2px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background: #ffa71a;
+  border: none;
+}
+
+input[type="checkbox"]:disabled + label {
+  cursor: not-allowed;
+}
+
+input[type="checkbox"]:disabled + label:before {
+  background: #ddd;
+}
+
+input[type="checkbox"]:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 0.18em;
+  top: 0.5em;
+  background: white;
+  width: 0.2em;
+  height: 0.2em;
+  box-shadow: 0.2em 0 0 white, 0.4em 0 0 white, 0.4em -0.2em 0 white, 0.4em -0.4em 0 white,
+    0.4em -0.6em 0 white, 0.4em -0.8em 0 white;
+  transform: rotate(45deg) scale(0.8);
+}

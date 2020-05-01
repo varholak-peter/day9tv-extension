@@ -2,6 +2,7 @@
 node_modules
 
 # Build directory
+build/
 dist/
 
 # Misc

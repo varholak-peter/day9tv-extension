@@ -4,10 +4,8 @@
   "description": "Just a simple accessibility optimizer & stuff",
   "main": "index.js",
   "scripts": {
-    "build": "export NODE_ENV=production && yarn build:clean && yarn build:public && webpack",
-    "build:clean": "rm -rf dist",
-    "build:public": "cp -r public dist",
-    "dev": "export NODE_ENV=development && yarn build:clean && yarn build:public && webpack --watch",
+    "build": "export NODE_ENV=production && rm -rf dist && cp -r public dist && webpack",
+    "dev": "export NODE_ENV=development && rm -rf build && cp -r public build && webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
