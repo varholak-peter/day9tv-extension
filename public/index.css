@@ -18,7 +18,7 @@ body {
 .app > fieldset {
   border: none;
   font-size: 1.2em;
-  margin-bottom: 0.5em;
+  padding-bottom: 0.2em;
 }
 
 .app > fieldset > legend {
@@ -37,7 +37,7 @@ body {
   color: gray;
   display: block;
   font-size: 0.8em;
-  margin-top: 0.25em;
+  margin: 0.4em 0 0.8em;
 }
 
 /* Checkbox */

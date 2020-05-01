@@ -60,7 +60,7 @@ export const App = () => {
       </fieldset>
       {hasUnchecked ? <strong>Reload the page to apply changes.</strong> : null}
       <hr />
-      <em>This extension is not related to Day9.tv dev team.</em>
+      <em>This extension is not related to Day9.tv web developers.</em>
     </div>
   );
 };
