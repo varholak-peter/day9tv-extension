@@ -1,6 +1,6 @@
 {
   "name": "day9tv-extension",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Just a simple accessibility optimizer & stuff",
   "main": "index.js",
   "scripts": {

@@ -34,7 +34,9 @@ const loadDay9tv = (tabId: number) => {
   const loadStyleSheets = _loadStyleSheets(loadCss);
 
   chrome.storage.local.get(["config"], ({ config }) => {
-    loadStyleSheets(config);
+    if (config) {
+      loadStyleSheets(config);
+    }
   });
 
   chrome.storage.onChanged.addListener((changes) => {
