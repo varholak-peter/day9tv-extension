@@ -11,6 +11,7 @@ export const log = (...msg: any[]) => {
   const page = chrome.extension.getBackgroundPage();
 
   if (page) {
+    // @ts-ignore (Console does exist on Window object)
     page.console.log(...msg);
   }
 };
