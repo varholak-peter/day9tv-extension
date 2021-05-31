@@ -27,7 +27,7 @@
     "preact": "^10.5.5"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.125",
+    "@types/chrome": "^0.0.143",
     "ts-loader": "^8.0.6",
     "typescript": "^4.0.3",
     "webpack": "^5.1.3",
