@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/varholak-peter/day9tv-extension#readme",
   "dependencies": {
-    "preact": "^10.5.5"
+    "preact": "^10.5.14"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.125",
